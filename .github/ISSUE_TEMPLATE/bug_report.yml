@@ -1,0 +1,76 @@
+name: Bug report
+description: Report a crash, hook failure, overlay issue, or API bug
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Include the Xeno version, Windows version, and the Console output. Do not
+        paste tokens, cookies, or private URLs.
+  - type: input
+    id: xeno-version
+    attributes:
+      label: Xeno version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 23H2"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Injector
+        - lua_resume hook
+        - Script execution
+        - Overlay
+        - Executor API
+        - Build
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Launch the game
+        2. Run the injector
+        3. Join a game
+        4. Run this script...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I tested with a clean game launch.
+          required: true
+        - label: I included the signature override I am using, if any.
+          required: false
+        - label: I removed tokens and private data from logs.
+          required: true

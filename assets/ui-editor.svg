@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-label="Xeno editor workspace preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06070c"/>
+      <stop offset="0.55" stop-color="#0b0d16"/>
+      <stop offset="1" stop-color="#15102a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="28%" r="62%">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#b388ff"/>
+    </linearGradient>
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="28" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect width="1280" height="800" fill="url(#glow)"/>
+  <rect width="1280" height="800" fill="url(#grid)"/>
+
+  <rect x="80" y="64" width="1120" height="680" rx="18" fill="#0c0e15" stroke="#252a3a" filter="url(#shadow)"/>
+  <rect x="80" y="64" width="1120" height="52" rx="18" fill="#10121b"/>
+  <rect x="80" y="98" width="1120" height="18" fill="#10121b"/>
+  <path d="M80 116h1120" stroke="#202534"/>
+
+  <rect x="112" y="78" width="32" height="32" rx="9" fill="url(#accent)"/>
+  <text x="128" y="100" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">X</text>
+  <text x="158" y="93" fill="#f4f1ff" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Xeno</text>
+  <text x="214" y="92" fill="#7d8499" font-family="Segoe UI, Arial, sans-serif" font-size="13">0.1.0</text>
+
+  <circle cx="1042" cy="86" r="4" fill="#5bdf8a"/>
+  <text x="1054" y="91" fill="#9aa3b7" font-family="Segoe UI, Arial, sans-serif" font-size="13">state online</text>
+  <circle cx="1172" cy="86" r="3" fill="#3a4053"/>
+  <circle cx="1184" cy="86" r="3" fill="#3a4053"/>
+
+  <text x="112" y="145" fill="#b69cff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">Editor</text>
+  <rect x="108" y="155" width="52" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="190" y="145" fill="#8b93a7" font-family="Segoe UI, Arial, sans-serif" font-size="14">Console</text>
+  <text x="286" y="145" fill="#8b93a7" font-family="Segoe UI, Arial, sans-serif" font-size="14">Settings</text>
+  <text x="382" y="145" fill="#8b93a7" font-family="Segoe UI, Arial, sans-serif" font-size="14">About</text>
+  <path d="M104 164h1056" stroke="#1d2230"/>
+
+  <text x="104" y="196" fill="#8b93a7" font-family="Segoe UI, Arial, sans-serif" font-size="14">Luau workspace</text>
+  <circle cx="236" cy="191" r="4" fill="#5bdf8a"/>
+  <text x="247" y="196" fill="#7fe3a7" font-family="Segoe UI, Arial, sans-serif" font-size="13">connected</text>
+
+  <rect x="104" y="214" width="1072" height="330" rx="9" fill="#080a10" stroke="#232838"/>
+  <rect x="104" y="214" width="46" height="330" fill="#0a0c13"/>
+  <path d="M150 214v330" stroke="#1c2130"/>
+
+  <g font-family="Cascadia Code, Consolas, monospace" font-size="17">
+    <text x="138" y="248" fill="#454b5f" text-anchor="end">1</text>
+    <text x="164" y="248" fill="#6b7280" xml:space="preserve">-- Xeno workspace</text>
+    <text x="138" y="278" fill="#454b5f" text-anchor="end">2</text>
+    <text x="164" y="278" fill="#d7dbea" xml:space="preserve"><tspan fill="#c084fc">local</tspan> Players = <tspan fill="#7dd3fc">game</tspan>:<tspan fill="#fbbf24">GetService</tspan>(<tspan fill="#86efac">"Players"</tspan>)</text>
+    <text x="138" y="308" fill="#454b5f" text-anchor="end">3</text>
+    <text x="138" y="338" fill="#454b5f" text-anchor="end">4</text>
+    <text x="164" y="338" fill="#93c5fd" xml:space="preserve">print(<tspan fill="#86efac">"executor:"</tspan>, <tspan fill="#fbbf24">identifyexecutor</tspan>())</text>
+    <text x="138" y="368" fill="#454b5f" text-anchor="end">5</text>
+    <text x="138" y="398" fill="#454b5f" text-anchor="end">6</text>
+    <text x="164" y="398" fill="#d7dbea" xml:space="preserve"><tspan fill="#c084fc">local</tspan> players = Players:<tspan fill="#fbbf24">GetPlayers</tspan>()</text>
+    <text x="138" y="428" fill="#454b5f" text-anchor="end">7</text>
+    <text x="164" y="428" fill="#d7dbea" xml:space="preserve"><tspan fill="#c084fc">for</tspan> _, player <tspan fill="#c084fc">in</tspan> players <tspan fill="#c084fc">do</tspan></text>
+    <text x="138" y="458" fill="#454b5f" text-anchor="end">8</text>
+    <text x="164" y="458" fill="#93c5fd" xml:space="preserve">    print(player.Name, player.DisplayName)</text>
+    <text x="138" y="488" fill="#454b5f" text-anchor="end">9</text>
+    <text x="164" y="488" fill="#d7dbea" xml:space="preserve"><tspan fill="#c084fc">end</tspan></text>
+  </g>
+
+  <rect x="164" y="500" width="2" height="18" rx="1" fill="#b69cff">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="104" y="564" width="150" height="42" rx="8" fill="url(#button)"/>
+  <rect x="104" y="564" width="150" height="42" rx="8" fill="none" stroke="#c4b5fd" stroke-opacity="0.4"/>
+  <text x="179" y="590" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Execute</text>
+
+  <rect x="266" y="564" width="96" height="42" rx="8" fill="#161923" stroke="#2a3042"/>
+  <text x="314" y="590" fill="#c7cbda" font-family="Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle">Clear</text>
+
+  <text x="382" y="590" fill="#6f768a" font-family="Segoe UI, Arial, sans-serif" font-size="13">Ctrl+Enter executes from the editor</text>
+
+  <path d="M104 668h1072" stroke="#1d2230"/>
+  <text x="104" y="700" fill="#61687d" font-family="Segoe UI, Arial, sans-serif" font-size="12">INSERT toggles the workspace</text>
+  <text x="1176" y="700" fill="#61687d" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="end">Xeno 0.1.0</text>
+</svg>

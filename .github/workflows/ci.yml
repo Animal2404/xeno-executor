@@ -1,0 +1,50 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "**.md"
+      - "assets/**"
+      - "docs/**"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  windows-x64:
+    runs-on: windows-2022
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache CMake dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            build/_deps
+            build/src
+          key: xeno-deps-${{ hashFiles('CMakeLists.txt', 'src/**/CMakeLists.txt') }}
+          restore-keys: |
+            xeno-deps-
+
+      - name: Configure
+        run: cmake -S . -B build -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: cmake --build build --config Release --parallel
+
+      - name: Stage artifacts
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path dist | Out-Null
+          Copy-Item build/src/dll/Release/xeno.dll dist/
+          Copy-Item build/src/injector/Release/xeno_injector.exe dist/
+          Copy-Item README.md, LICENSE dist/
+          Get-ChildItem dist | Format-Table Name, Length
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: xeno-win64
+          path: dist/
+          if-no-files-found: error

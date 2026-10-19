@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="84" viewBox="0 0 380 84" role="img" aria-label="Download Xeno">
+  <defs>
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="0.55" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#b388ff"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#6d4dff" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect x="4" y="4" width="372" height="76" rx="38" fill="url(#button)" filter="url(#shadow)"/>
+  <rect x="4" y="4" width="372" height="38" rx="38" fill="url(#shine)"/>
+  <rect x="4" y="4" width="372" height="76" rx="38" fill="none" stroke="#d8ccff" stroke-opacity="0.45"/>
+
+  <path d="M330 28v18m0 0-7-7m7 7 7-7" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M320 54h20" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="38" y="42" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Download Xeno</text>
+  <text x="38" y="63" fill="#e6deff" font-family="Segoe UI, Arial, sans-serif" font-size="12">Windows x64, free, portable build</text>
+</svg>

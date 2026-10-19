@@ -1,0 +1,43 @@
+# build output
+build/
+out/
+bin/
+obj/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# CMake
+CMakeUserPresets.json
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+*.user
+
+# binaries and artifacts
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.lib
+*.exp
+*.zip
+!docs/**/*.dll
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# local runtime data
+autoexec/
+signatures.local.ini
+*.log
