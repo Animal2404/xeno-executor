@@ -33,6 +33,8 @@ One DLL. One injector. No external console.
 
 **Archive password: 5139237619**
 
+Unpack the archive into any folder before running the injector.
+
 > **0.1.0 reference build.** The default `lua_resume` pattern is a starting
 > point and must be verified against the client build you attach to. Manual-map
 > imports also assume per-boot system module bases. See
@@ -71,14 +73,15 @@ One DLL. One injector. No external console.
 
 1. Download the latest package from the
    [download folder](https://www.mediafire.com/folder/7q4dz0de1v2y0/xeno+executor). Archive password: **5139237619**
-2. Launch Roblox and join a game.
-3. Run the injector as administrator:
+2. Unpack the archive into any folder.
+3. Launch Roblox and join a game.
+4. Run the injector as administrator:
 
    ```powershell
    .\xeno_injector.exe .\xeno.dll
    ```
 
-4. Press `INSERT`, paste a script, and press `Execute`.
+5. Press `INSERT`, paste a script, and press `Execute`.
 
 A different target process can be supplied as the second argument:
 
